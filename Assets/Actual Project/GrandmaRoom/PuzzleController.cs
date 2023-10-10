@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PuzzleController : MonoBehaviour
 {
-    public bool puzzleDone = false;
+  
 
     public GameObject Player;
     public GameObject OriginalPoint;
+    public GameObject RatingUI;
+    public GameObject Intro;
 
     [Header("CDs")]
     [SerializeField]
@@ -38,6 +40,9 @@ public class PuzzleController : MonoBehaviour
         if (CD1.transform.position == Place1.transform.position && CD2.transform.position == Place2.transform.position && CD3.transform.position == Place3.transform.position && CD4.transform.position == Place4.transform.position && CD5.transform.position == Place5.transform.position)
         {         
                 Player.transform.position = OriginalPoint.transform.position;
+                Intro.SetActive(false);
+                RatingUI.SetActive(true);
+                
         }
     }
 }
