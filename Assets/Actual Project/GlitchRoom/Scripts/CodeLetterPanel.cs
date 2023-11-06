@@ -27,7 +27,7 @@ public class CodeLetterPanel : MonoBehaviour
     [SerializeField]
     private string num9;
 
-    private List<string> code = new List<string>();
+    public List<string> code = new List<string>();
 
 
     public void One()
@@ -167,24 +167,25 @@ public class CodeLetterPanel : MonoBehaviour
     {
         if (code.Count == 9)
         {
-            if (code[0] == num1.ToString())
+            if (code[0] == num1)
             {
-                if (code[1] == num2.ToString())
+                if (code[1] == num2)
                 {
-                    if (code[2] == num3.ToString())
+                    if (code[2] == num3)
                     {
-                        if (code[3] == num4.ToString())
+                        if (code[3] == num4)
                         {
-                            if (code[4] == num5.ToString())
+                            if (code[4] == num5)
                             {
-                                if (code[5] == num6.ToString())
+                                if (code[5] == num6)
                                 {
-                                    if (code[6] == num7.ToString())
+                                    if (code[6] == num7)
                                     {
-                                        if (code[7] == num8.ToString())
+                                        if (code[7] == num8)
                                         {
-                                            if (code[8] == num9.ToString())
+                                            if (code[8] == num9)
                                             {
+                                                Debug.Log("Penis");
                                                 player.transform.position = TPPoint.transform.position;
                                             }
                                             else

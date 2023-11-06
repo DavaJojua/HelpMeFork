@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 
 public class CodePanel : MonoBehaviour
 {
     public GameObject player;
+    [FormerlySerializedAs("TPPoint")] [SerializeField]
+    private GameObject tpPoint;
     [SerializeField]
     private int num1;
     [SerializeField]
@@ -100,7 +103,7 @@ public class CodePanel : MonoBehaviour
                     {
                         if (code[3] == num4)
                         {
-                            player.transform.position = new Vector3(54.3f, 1.52f, 5.98f);
+                            player.transform.position = tpPoint.transform.position;
                                 Debug.Log("ja");
                         }
                         else
