@@ -14,6 +14,10 @@ public class ClueManager : MonoBehaviour
     private GameObject OriginalPoint;
     [SerializeField]
     private GameObject Player;
+    [SerializeField] 
+    private GameObject UI_Previous;
+    [SerializeField] 
+    private GameObject UI_New;
     
     private void OnTriggerEnter(Collider other)
     {
@@ -30,6 +34,8 @@ public class ClueManager : MonoBehaviour
         {
             Debug.Log("You got all of the clues!");
             Player.transform.position = OriginalPoint.transform.position;
+            UI_Previous.SetActive(false);
+            UI_New.SetActive(true);
         }
     }
 }

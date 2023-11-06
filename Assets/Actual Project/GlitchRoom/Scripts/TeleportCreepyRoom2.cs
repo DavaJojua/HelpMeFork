@@ -7,7 +7,7 @@ public class TeleportCreepyRoom2 : MonoBehaviour
     public GameObject player;
     public GameObject TPCR;
     // Start is called before the first frame update
-    private void OnTriggerEvent(Collider other) 
+    private void OnTriggerEnter(Collider other) 
     {
         player.transform.position = TPCR.transform.position;
     }
