@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class CodePanel : MonoBehaviour
 {
+    public GameObject player;
     [SerializeField]
     private int num1;
     [SerializeField]
@@ -99,6 +100,7 @@ public class CodePanel : MonoBehaviour
                     {
                         if (code[3] == num4)
                         {
+                            player.transform.position = new Vector3(54.3f, 1.52f, 5.98f);
                             Debug.Log("ja");
                         }
                         else
