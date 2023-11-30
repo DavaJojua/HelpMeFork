@@ -560,7 +560,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
-  m_Layer: 0
 --- !u!1001 &44083204
 PrefabInstance:
   m_ObjectHideFlags: 0

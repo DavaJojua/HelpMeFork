@@ -46,7 +46,9 @@ public class PuzzleController : MonoBehaviour
                 Player.transform.position = OriginalPoint.transform.position;
                 Intro.SetActive(false);
                 RatingUI.SetActive(true);
-                
+                CD1.transform.position = OriginalPoint.transform.position;
+                CD1.SetActive(false);
+
         }
     }
 }

@@ -57,6 +57,14 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.pico.livepreview": {
+      "version": "file:C:/Users/Jojua/Desktop/Новая папка (3)",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.unity.xr.management": "4.0.0"
+      }
+    },
     "com.unity.render-pipelines.core": {
       "version": "10.10.1",
       "depth": 1,

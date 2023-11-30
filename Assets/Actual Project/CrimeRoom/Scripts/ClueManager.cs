@@ -36,6 +36,7 @@ public class ClueManager : MonoBehaviour
             Player.transform.position = OriginalPoint.transform.position;
             UI_Previous.SetActive(false);
             UI_New.SetActive(true);
+            amountOfClues = 0;
         }
     }
 }
